@@ -22,14 +22,20 @@ export default function Projects() {
                 </li>
               ))}
             </ul>
-            <div className="mt-auto flex gap-4 pt-2 text-sm font-medium">
-              <a href={p.liveUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
-                Live
-              </a>
-              <a href={p.repoUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
-                Code
-              </a>
-            </div>
+            {(p.liveUrl || p.repoUrl) && (
+              <div className="mt-auto flex gap-4 pt-2 text-sm font-medium">
+                {p.liveUrl && (
+                  <a href={p.liveUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
+                    Live
+                  </a>
+                )}
+                {p.repoUrl && (
+                  <a href={p.repoUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
+                    Code
+                  </a>
+                )}
+              </div>
+            )}
           </article>
         ))}
       </div>

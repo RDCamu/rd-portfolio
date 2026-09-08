@@ -1,53 +1,45 @@
 export const profile = {
-  name: "Your Name",
-  role: "Software Engineer",
-  tagline: "I build fast, reliable web apps for teams that care about the details.",
-  location: "City, Country",
-  email: "you@example.com",
+  name: "Roylan Dexter Camu",
+  role: "Computer Engineering Student",
+  tagline: "I build full-stack systems and hardware-integrated projects, from web apps to embedded sensors.",
+  location: "Dasmariñas City, Cavite, Philippines",
+  email: "roylan.camu@gmail.com",
   resumeUrl: "/resume.pdf",
   socials: [
-    { label: "GitHub", url: "https://github.com/yourhandle" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/yourhandle" },
+    { label: "GitHub", url: "https://github.com/RDCamu" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/roylan-dexter-camu-2a4b7a152" },
   ],
 };
 
 export const about = {
   bio: [
-    "A couple of sentences about who you are, your background, and what got you into this field.",
-    "A couple more sentences about what you're focused on now and what kind of work excites you.",
+    "BS Computer Engineering student at the University of the Philippines Diliman (expected 2026), with a background spanning web development, embedded systems, and data tooling.",
+    "I've built a full-stack lab management system used to run a real optical clinic workflow, and an embedded CanSat that estimates wind speed and detects smoke mid-descent. Comfortable across Python, SQL, C++, and modern web stacks.",
   ],
 };
 
 export const projects = [
   {
-    title: "Project One",
-    description: "One or two sentences describing the problem this solves and your role in building it.",
-    stack: ["Next.js", "TypeScript", "Tailwind"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/yourhandle/project-one",
-    image: "/projects/project-one.png",
+    title: "OptiFlow",
+    description:
+      "A Flask-based optical laboratory management system handling job intake, dynamic pricing, billing/invoicing, inventory, and dispatch across multiple clinics with different pricing contracts.",
+    stack: ["Python", "Flask", "SQLite", "JavaScript"],
+    liveUrl: undefined,
+    repoUrl: undefined,
   },
   {
-    title: "Project Two",
-    description: "One or two sentences describing the problem this solves and your role in building it.",
-    stack: ["React", "Node.js", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/yourhandle/project-two",
-    image: "/projects/project-two.png",
-  },
-  {
-    title: "Project Three",
-    description: "One or two sentences describing the problem this solves and your role in building it.",
-    stack: ["Python", "FastAPI"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/yourhandle/project-three",
-    image: "/projects/project-three.png",
+    title: "Can-Sat: GPS Wind Estimation & Smoke Detection",
+    description:
+      "An undergraduate CanSat project (UP EEEI, June 2025) that estimates wind speed/direction from GPS during descent and detects smoke via PM2.5/PM1/eCO2 thresholds, streaming live data to a local dashboard.",
+    stack: ["PIC32", "C", "GPS", "Embedded Systems"],
+    liveUrl: undefined,
+    repoUrl: undefined,
   },
 ];
 
 export const skillGroups = [
-  { label: "Languages", items: ["TypeScript", "JavaScript", "Python"] },
-  { label: "Frontend", items: ["React", "Next.js", "Tailwind CSS"] },
-  { label: "Backend", items: ["Node.js", "PostgreSQL", "REST APIs"] },
-  { label: "Tools", items: ["Git", "Docker", "Vercel"] },
+  { label: "Languages", items: ["Python", "SQL", "C++", "HTML", "CSS"] },
+  { label: "Web & Data", items: ["Flask", "ETL", "REST APIs"] },
+  { label: "Embedded", items: ["PIC32", "Sensors", "GPS"] },
+  { label: "Tools", items: ["Git", "Power BI", "Excel"] },
 ];
