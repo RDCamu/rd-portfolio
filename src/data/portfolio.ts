@@ -35,6 +35,19 @@ export const projects = [
     liveUrl: undefined,
     repoUrl: undefined,
   },
+  {
+    title: "Optometry Patient Records (PhilHealth YAKAP)",
+    description:
+      "Explored patient-records options for an optometry clinic client, digitizing the PhilHealth YAKAP Annex E form end-to-end: a multi-user web app (encrypted records, role-based accounts for clerks/doctor/admin, deployed on AWS) plus a single-file offline fallback for the doctor's laptop when there's no internet.",
+    stack: ["Flask", "SQLite", "Python", "JavaScript"],
+    liveUrl: undefined,
+    repoUrl: undefined,
+    images: [
+      "/projects/philhealth-records.png",
+      "/projects/philhealth-form.png",
+      "/projects/philhealth-admin.png",
+    ],
+  },
 ];
 
 export const skillGroups = [
